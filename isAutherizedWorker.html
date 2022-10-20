@@ -1,0 +1,62 @@
+<!-- CORNERSTONE WEBSITE DESIGNED AND CREATED BY MAXIM FEODRETS ON 10/20/2022-->
+<!-- ALL COPYRIGHTS RESERVED -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cornerstone CAFE | Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- LINK TO CSS FILES -->
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <!-- LINK TO THE SCROOL PAGE ANIMATIONS -->
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <!-- FIREBASE LINKS -->
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+  </head>
+  <body onload="checkTheDevice()">
+    <!-- NAVIGATION BAR FOR THE PAGE -->
+    <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="isAutherizedWorker.html"><img src="cornerstoneLogo.jpeg" width="150" height="60" alt="Cornerstone CAFE"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" style="color: red;" onclick="logOut()">Log Out</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <footer>
+        <p>Cornerstone</p>
+        <p> Copyright © 2020-<script>document.write(new Date().getFullYear())</script></p>
+      </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        <!-- SCROOL ANIMATIONS JAVA SCRIPT -->
+        <script src="scroolAnimations.js"></script>
+        <script src="checkTheDevice.js"></script>
+        <!-- LINK TO THE FIREBASE CONFIGURATION -->
+        <script src="firebaseConfiguration.js"></script>
+        <script src="loginVerification.js"></script>
+    </body>
+</html>

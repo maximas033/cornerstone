@@ -1,0 +1,119 @@
+*{
+    /* dont allow horizontal scrolling */
+    overflow-x: hidden;
+}
+
+#loginForm{
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
+
+#loginForm h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: heavier;
+    margin-bottom: 20px;
+}
+
+#errorMessage{
+    color: red;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: lighter;
+    margin-bottom: 20px;
+    display: none;
+}
+
+#loginForm input{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* REMOVE THE BLUE OUTLINE AROUND THE INPUTS */
+#loginForm input:focus{
+    outline: none;
+}
+
+
+#loginForm button{
+    /* center the button */
+    margin: auto;
+    width: 50%;
+    height: 40px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    background-color: #fff;
+    color: black;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+
+/* FOOTER */
+footer{
+    /* make the footer full width */
+    width: 100%;
+    /* make the footer 100px high */
+    height: 100px;
+    /* make the footer stick to the bottom */
+    bottom: 0;
+    /* make the footer white */
+    background-color: white;
+    /* center the text */
+    text-align: center;
+    /* make the text 1.5rem high */
+    font-size: 1rem;
+    /* make the text lighter */
+    font-weight: normal;
+    /* make the text black */
+    color: black;
+    position: absolute;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 600px){
+    #loginForm{
+        width: 90%;
+    }
+
+    #loginForm h1{
+        font-size: 2rem;
+    }
+
+    #loginForm input{
+        height: 30px;
+        /* make the imput inside bigger */
+        padding: 20px 10px 20px 10px;
+
+    }
+
+    #loginForm button{
+        height: 45px;
+        font-size: 1rem;
+        padding: 5px 5px;
+
+    }
+
+    footer{
+        height: 10%;
+        overflow-y: none;
+    }
+}

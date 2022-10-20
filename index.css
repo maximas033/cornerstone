@@ -1,0 +1,349 @@
+*{
+    /* dont allow horizontal scrolling */
+    overflow-x: hidden;
+}
+
+/* WELCOME SECTION DIV THAT DISPLAY A WELCOME PICTURE */
+#welcomeSectionPicture{
+    background-image: url("WelcomePicture2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40vh;
+    width: 50%;
+    /* alight the picture in the middle of the screen */
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* DISPLAYS A SCROOL DOWN BUTTON */
+/* SCROOL DOWN SECTION ERROW */
+#scroolArrow{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: white;
+    animation: animate 2s infinite;
+}
+#scroll-down-animation {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#scroolArrow a{
+    text-decoration: none;
+}
+  
+h2{
+    color: rgb(0, 0, 0);
+    font-weight: lighter;
+    font-size: 15px;
+    margin-top: 15%;
+    letter-spacing: 0.5px;
+}
+  
+.mouse{
+    margin: 0 auto;
+    display: block;
+    border-radius: 50px;
+    border: 2px solid rgb(0, 0, 0);
+    height: 70px;
+    width: 40px;
+    position: relative;
+}
+  
+.move{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: move 2s linear infinite;
+}
+  
+@keyframes move{
+    0% {
+      transform: translate(-50%,3px);
+      opacity: 0;
+    }
+    50% {
+      transform: translate(-50%,40px);
+      opacity: 1;
+    }
+    100% {
+        transform: translate(-50%,53px);
+        opacity: 0;
+      }
+}
+
+/* THE BEST COFFEESHOP TDIV */
+#bestCoffeeshop{
+    color: black;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    margin-top: 10%;
+}
+
+#bestCoffeeshopText{
+    font-size: 1.3rem;
+    font-weight: lighter;
+    letter-spacing: 0.5px;
+    margin-top: 10%;
+}
+
+#bestCoffeeshopText h1{
+    margin-bottom: 2%;
+    font-size: 2.5rem;
+}
+
+#bestCoffeeshopText p{
+    margin: 0 5% 5% 5%;
+}
+
+.bestCoffeeshopPictures{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+}
+
+/* REWARDS SYSTEM SECTION*/
+#rewardSystem{
+    position: absolute;
+    top: 155%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+#rewardSystemText{
+    font-size: 1.3rem;
+    font-weight: lighter;
+    letter-spacing: 0.5px;
+    margin-top: 10%;
+    text-align: center;
+}
+
+#rewardSystemText h1{
+    margin-bottom: 2%;
+    font-size: 2.5rem;
+}
+
+/* JOIN OUR TEAM SECTION */
+#joinOurTeam{
+    position: absolute;
+    top: 193%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+#joinOurTeamText{
+    font-size: 1.3rem;
+    font-weight: lighter;
+    letter-spacing: 0.5px;
+    margin-top: 10%;
+    text-align: center;
+}
+
+#joinOurTeamText h1{
+    margin-bottom: 2%;
+    font-size: 2.5rem;
+}
+
+#joinOurTeamText p{
+    margin: 0 5% 5% 5%;
+}
+
+#joinOurTeam button{
+    margin-top: -1%;
+    padding: 1% 5% 1% 5%;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #fff;
+    color: black;
+    font-size: 1rem;
+    font-weight: lighter;
+    letter-spacing: 0.5px;
+    margin-bottom: 10%;
+}
+
+#joinOurTeam a{
+    text-decoration: none;
+    color: black;
+}
+
+/* FOOTER */
+footer{
+    /* PUT THE FOOTER AT THE BOTTOM OF THE PAGE */
+    position: absolute;
+    top: 235%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/* media queries */
+@media screen and (max-width: 768px){
+    #welcomeSectionPicture{
+        /* fit the picture to the screen */
+        width: 100%;
+        height: 40%;
+        background-image: url("WelcomePicture2.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #bestCoffeeshop{
+        position: absolute;
+        top: 125%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+        margin-top: 10%;
+    }
+    #bestCoffeeshopText{
+        font-size: 1.3rem;
+        font-weight: lighter;
+        letter-spacing: 0.5px;
+        margin-top: 10%;
+    }
+    #bestCoffeeshopText h1{
+        margin-bottom: 5%;
+        font-size: 2.5rem;
+    }
+
+    #bestCoffeeshopText p{
+        margin: 0 5% 5% 5%;
+        text-align: left;
+        text-indent: 10%;
+    }
+
+    .bestCoffeeshopPictures{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    #rewardSystem{
+        position: absolute;
+        top: 175%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    #rewardSystemText{
+        font-size: 1.3rem;
+        font-weight: lighter;
+        letter-spacing: 0.5px;
+        margin-top: 10%;
+        text-align: center;
+    }
+
+    #rewardSystemText h1{
+        margin-bottom: 2%;
+        font-size: 2.5rem;
+    }
+
+    #joinOurTeam{
+        position: absolute;
+        top: 210%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-bottom: 5%;
+        text-align: center;
+    }
+
+    #joinOurTeamText{
+        font-size: 1.3rem;
+        font-weight: lighter;
+        letter-spacing: 0.5px;
+        margin-top: 10%;
+        text-align: center;
+    }
+
+    #joinOurTeamText h1{
+        margin-bottom: 2%;
+        font-size: 2.3rem;
+    }
+
+    #joinOurTeamText p{
+        margin: 0 5% 5% 5%;
+        text-align: left;
+        text-indent: 10%;
+    }
+
+    #joinOurTeam button{
+        margin-top: -1%;
+        padding: 1% 5% 1% 5%;
+        border: 1px solid black;
+        border-radius: 5px;
+        background-color: #fff;
+        color: black;
+        font-size: 1rem;
+        font-weight: lighter;
+        letter-spacing: 0.5px;
+        margin-bottom: 15%;
+    }
+
+
+    #joinOurTeam a{
+        text-decoration: none;
+        color: black;
+    }
+    
+
+    footer{
+        /* PUT THE FOOTER AT THE BOTTOM OF THE PAGE */
+        position: absolute;
+        top: 235%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+        margin-top: 10%;
+    }
+
+}
+
