@@ -227,7 +227,7 @@ footer{
     }
     #bestCoffeeshop{
         position: absolute;
-        top: 125%;
+        top: 135%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 100%;
@@ -256,13 +256,13 @@ footer{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        margin-top: 5%;
+        margin-top: 15%;
         margin-bottom: 5%;
     }
 
     #rewardSystem{
         position: absolute;
-        top: 175%;
+        top: 185%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 100%;
@@ -284,7 +284,7 @@ footer{
 
     #joinOurTeam{
         position: absolute;
-        top: 210%;
+        top: 220%;
         left: 50%;
         transform: translate(-50%, -50%);
         display: flex;
@@ -337,7 +337,7 @@ footer{
     footer{
         /* PUT THE FOOTER AT THE BOTTOM OF THE PAGE */
         position: absolute;
-        top: 235%;
+        top: 245%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 100%;
