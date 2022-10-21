@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cornerstone CAFE | STAFF </title>
+    <title>Cornerstone CAFE | Add people </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- LINK TO CSS FILES -->
-    <link rel="stylesheet" type="text/css" href="editPage.css">
+    <link rel="stylesheet" type="text/css" href="addPerson.css">
     <!-- LINK TO THE SCROOL PAGE ANIMATIONS -->
     <script src="https://unpkg.com/scrollreveal@4"></script>
     <!-- FIREBASE LINKS -->
@@ -29,7 +29,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="addPeople.html">Add people</a>
+                    <a class="nav-link" href="editPage.html">Back</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" style="color: red;" onclick="logOut()">Log Out</a>
@@ -39,33 +39,31 @@
         </div>
       </nav>
 
-      <section>
+
+
+      <section id="addPerson">
+        <h1>Add a Person</h1>
+        <p>This will allow you to add a person to your team, either admin or a worker.</p>
+        <h6>WARNING: ANYONE WITH ADMIN ACCESS WILL ABLE TO ADD A PERSONNEL TO THE TEAM</h6>
+        <p id="alerts"></p>
         <div>
-            <h1 class="text-center">Edit Event</h1>
+            <form>
+                <input type="email" placeholder="Email" id="emailCreate">
+                <input type="password" placeholder="Password" id="passwordCreate">
+                <button type="submit" onclick="addPerson(event)">Add Person</button>
+            </form>
         </div>
       </section>
 
-      <section id="displaySM">
-        <div>
-            <p id="successMessage">Successfully uploaded</p>
-        </div>
-      </section>
 
-      <section id="displaySMR">
-        <div>
-            <p id="successMessageR">Successfully deleted</p>
-        </div>
-      </section>
 
-      <section id="uploadEvent">
-        <form id="uploadEventText"> 
-            <input type="text" placeholder="Title" id="EventTitle" required>
-            <input type="file" accept="image/" id="eventPic" >
-            <textarea type="text", placeholder="Paragraph" id="para" required></textarea>
-            <button type="submit" onclick="uploadFiles(event)">Upload Event</button>
-            <button onclick="DELETEBUTTON(event)" id="DeleteEvent" type="button">DELETE EVENT</button>
-        </form>
-      </section>
+
+
+
+
+
+
+
 
 
       <footer>
@@ -81,5 +79,6 @@
         <script src="firebaseConfiguration.js"></script>
         <script src="loginVerification.js"></script>
         <script src="uploadFiles.js"></script>
+        <script src="addPErson.js"></script>
     </body>
 </html>

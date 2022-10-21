@@ -1,0 +1,91 @@
+#addPerson{
+    margin-top: 5%;
+    text-align: center;
+}
+
+#addPerson h1{
+    font-size: 2.5em;
+    color: rgb(0, 0, 0);
+}
+
+#addPerson p{
+    font-size: 1em;
+    color: rgb(200, 200, 200);
+}
+
+#addPerson h6{
+    padding: 10px;
+    background-color: rgb(255, 213, 136);
+    width: 40%;
+    margin: 0 auto;
+}
+
+#alerts{
+    margin-top: 1%;
+    text-align: center;
+}
+#addPerson input{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 40%;
+    margin-bottom: 20px;
+    outline:0;
+    border: 0;
+    border: 1px solid gray;
+    padding: 10px;
+    align-items: center;
+    margin: 2% auto;
+}
+
+#addPerson button{
+    width: 20%;
+    height: 45px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    background-color: #fff;
+    color: black;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    cursor: pointer;
+    text-align: center;
+    margin: 1% auto;
+}
+
+#addPerson button:hover{
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+}
+
+footer{
+    margin-top: 10%;
+    text-align: center;
+}
+
+
+
+/* media queries */
+@media screen and (max-width: 600px){
+    #addPerson{
+        margin-top: 10%;
+    }
+    #addPerson h1{
+        font-size: 2em;
+    }
+    #addPerson p{
+        font-size: 0.8em;
+    }
+    #addPerson h6{
+        width: 90%;
+    }
+    #addPerson input{
+        width: 90%;
+    }
+    #addPerson button{
+        width: 40%;
+    }
+
+    footer{
+        margin-top:35%;
+    }
+}
