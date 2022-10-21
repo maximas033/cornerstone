@@ -24,7 +24,7 @@ function getANDdisplay(){
                 // set the image width
                 img.width = 300
                 // set the image height
-                img.height = 250
+                img.height = 300
                 // append the image to the div
                 document.getElementById('displayEventImage').appendChild(img)
             })

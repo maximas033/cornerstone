@@ -141,21 +141,27 @@ h2{
     margin-bottom: 5%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     vertical-align: center;
 }
 
 #eventTITLE{
     margin-top: 5%;
+    text-align: center;
 }
 
 #displayEventTEXT{
     font-size: 1.3rem;
     font-weight: lighter;
     letter-spacing: 0.5px;
-    margin-top: 10%;
+    width: 65%;
+    margin: 0 auto;
     text-align: center;
     vertical-align: center;
+}
+
+#displayEventImage{
+    margin-right: 10%;
 }
 
 #eventText h1{
@@ -222,7 +228,7 @@ footer{
     /* PUT THE FOOTER AT THE BOTTOM OF THE PAGE */
     width: 100%;
     text-align: center;
-    margin-top: 20%;
+    margin-top: 8%;
 }
 
 
@@ -293,18 +299,42 @@ footer{
     }
 
     #event{
+        width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         margin-top: 10%;
         margin-bottom: 15%;
+        text-align: center;
     }
 
-    #eventTITLE{
+    #displayEventTitle{
         margin-top: 10%;
+        font-size: 2.5rem;
+        text-align: center;
     }
 
+    #displayEventTEXT{
+        width: 95%;
+        font-size: 1.3rem;
+        font-weight: lighter;
+        letter-spacing: 0.5px;
+        text-align: center;
+        vertical-align: center;
+        margin: 5% 5%;
+        text-align: left;
+        text-indent: 10%;
+    }
+
+    #displayEventImage{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    
     #joinOurTeam{
         margin-top: 10%;
     }
