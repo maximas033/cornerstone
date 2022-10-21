@@ -79,12 +79,18 @@ footer{
     #addPerson h6{
         width: 90%;
     }
+    #alerts{
+        margin-top: 2%;
+        font-size: 2em;
+    }
     #addPerson input{
         width: 90%;
     }
     #addPerson button{
         width: 40%;
     }
+
+
 
     footer{
         margin-top:35%;

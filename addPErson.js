@@ -7,19 +7,21 @@ function addPerson(event) {
     event.preventDefault();
     var email = document.getElementById("emailCreate").value;
     var password = document.getElementById("passwordCreate").value;
+    var isAdmin = document.getElementById("isADMIN").value;
     firebase.auth().createUserWithEmailAndPassword(email, password).then(function() {
         var user = firebase.auth().currentUser;
         var uid = user.uid;
         var email = user.email;
-        var ref = firebase.database().ref("users/" + uid);
-        ref.set({
+        var ref = firebase.database().ref("users");
+        ref.child("data" + uid).set({
             email: email,
-            dateCreate: new Date().toLocaleString()
-            
+            dateCreate: new Date().toLocaleString(),
+            isADMIN: isAdmin
         });
         // clear the form
         document.getElementById("emailCreate").value = "";
         document.getElementById("passwordCreate").value = "";
+        document.getElementById("isADMIN").value = "";
        document.getElementById("alerts").innerHTML = "User created successfully";
        document.getElementById("alerts").style.color = "green";
        setTimeout(function() {

@@ -14,21 +14,36 @@ function login(event){
         }, 3000);
 
     }).then(function(user){
-        // if(user){
-        //     window.location = "isAutherizedWorker.html"
-        //     // document.getElementById("gName").innerHTML = user
-        // }
-        // else{
-
-        // }
-        if(user != null && email === "max.personal9@gmail.com"){
-            window.location = "editpage.html"
-        }
-        else if(user != null){
-            window.location = "isAutherizedWorker.html"
+        //IF THE USER IS LOGGED IN
+        if(user != null){
+            console.log("User is logged in")
+            // get all information from the users database
+            var ref = firebase.database().ref("users");
+            // loop throught the data  
+            // if the users email matches with the database emaul
+            // then get the isADMIN value
+            ref.on("value", function(snapshot) {
+                snapshot.forEach(function(childSnapshot) {
+                    var childData = childSnapshot.val();
+                    if(childData.email == email){
+                        console.log(childData.isADMIN)
+                        // if the user is an admin then redirect to the admin page
+                        if(childData.isADMIN == "yes" || childData.isADMIN == "Yes"){
+                            window.location.href = "editpage.html"
+                        }else{
+                            window.location.href = "isAuthorizedWorker.html"
+                        }
+                    }
+                });
+            }
+            , function (errorObject) {
+                console.log("The read failed: " + errorObject.code);
+            }
+            );
         }
     })
- }
+}
+
 
 
 
