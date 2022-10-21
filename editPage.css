@@ -1,0 +1,197 @@
+.text-center{
+    text-align: center;
+    font: normal;
+    font-size: 2.5rem;
+    margin-bottom: 3%;
+}
+
+#displaySM{
+    display: none;
+    text-align: center;
+}
+
+#successMessage{
+    color: green;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    text-align: center;
+}
+
+/* Successfully delete Massege */
+#displaySMR{
+    display: none;
+    text-align: center;
+}
+
+#successMessageR{
+    color: green;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+form input{
+    width: 40%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    outline: none;
+    border:0 0 1px solid black 0;
+}
+
+#para{
+    height: 100px;
+    text-align: left;
+}
+
+/* input placeholder color */
+form input::placeholder{
+    color: gray;
+}
+
+form button{
+    width: 40%;
+    height: 40px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    background-color: #fff;
+    color: black;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    cursor: pointer;
+    text-align: center;
+}
+
+#DeleteEvent{
+    width: 20%;
+    height: 40px;
+    border: 1px solid red;
+    border-radius: 5px;
+    background-color: #fff;
+    color: red;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 5%;
+   /* display the to the center */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* FOOTER */
+footer{
+    /* PUT THE FOOTER AT THE BOTTOM OF THE PAGE */
+    width: 100%;
+    text-align: center;
+    margin-top: 15%;
+}
+
+
+
+
+
+/* media queries */
+@media screen and (max-width: 768px){
+    .text-center{
+        text-align: center;
+        font: normal;
+        font-size: 2.5rem;
+        margin-bottom: 10%;
+        margin-top: 5%;
+    }
+    
+    #displaySM{
+        display: none;
+        text-align: center;
+    }
+    
+    #successMessage{
+        color: green;
+        font-size: 1.3rem;
+        font-weight: lighter;
+        text-align: center;
+    }
+    
+    /* Successfully delete Massege */
+    #displaySMR{
+        display: none;
+        text-align: center;
+    }
+    
+    #successMessageR{
+        color: green;
+        font-size: 1.3rem;
+        font-weight: lighter;
+        text-align: center;
+    }
+    
+    form{
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: auto;
+    }
+    
+    form input{
+        width: 90%;
+        margin-bottom: 20px;
+        outline:0;
+        border: 0;
+        border: 1px solid black;
+    }
+    
+    #eventPic{
+        border: none;
+    }
+
+    /* input placeholder color */
+    form input::placeholder{
+        color: gray;
+    }
+    
+    form button{
+        width: 90%;
+        height: 40px;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 5px;
+        background-color: #fff;
+        color: black;
+        font-size: 1.3rem;
+        font-weight: lighter;
+        cursor: pointer;
+        text-align: center;
+    }
+    
+    #DeleteEvent{
+        margin-top: 20%;
+        width: 90%;
+        height: 40px;
+        border: 1px solid red;
+        border-radius: 5px;
+        background-color: #fff;
+        color: red;
+        font-size: 1.3rem;
+        font-weight: lighter;
+        cursor: pointer;
+        text-align: center;
+       /* display the to the center */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    footer{
+        margin-top: 20%;
+    }
+
+}

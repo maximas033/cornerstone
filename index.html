@@ -11,8 +11,13 @@
     <link rel="stylesheet" type="text/css" href="index.css">
     <!-- LINK TO THE SCROOL PAGE ANIMATIONS -->
     <script src="https://unpkg.com/scrollreveal@4"></script>
+    <!-- FIREBASE LINKS -->
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-database.js"></script>
+    <!-- FIREBASE STORAGE -->
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-storage.js"></script>
   </head>
-  <body onload="checkTheDevice()">
+  <body onload="checkTheDevice(), getANDdisplay()">
     <!-- NAVIGATION BAR FOR THE PAGE -->
     <nav class="navbar navbar-expand-lg bg-white">
         <div class="container-fluid">
@@ -81,10 +86,20 @@
             <h1 class="rewardSystemTexth1">
                 Reward System
             </h1>
-            <p class="rewardSystemTextp">Join the Cornerstone reward system and don't miss out on you're next free drink.</p>
+            <p class="rewardSystemTextp">Join the Cornerstone rewards system and don't miss out on you're next free drink. Our system allows you to receive a free drink after you purchase your 9th drink.</p>
         </div>
       </section>
       
+      <section id="event">
+        <div id="eventTITLE">
+          <h1 id="displayEventTitle"></h1>
+          <p id="displayEventTEXT"></p>
+        </div>
+
+        <div id="displayEventImage">
+          
+        </div>
+      </section>
 
       <!-- JOIN OUT TEAM SECTION -->
       <section id="joinOurTeam">
@@ -111,5 +126,7 @@
         <!-- SCROOL ANIMATIONS JAVA SCRIPT -->
         <script src="scroolAnimations.js"></script>
         <script src="checkTheDevice.js"></script>
+        <script src="displayEVENTSTUFF.js"></script>
+        <script src="firebaseConfiguration.js"></script>
     </body>
 </html>

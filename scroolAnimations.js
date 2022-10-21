@@ -12,3 +12,6 @@ ScrollReveal().reveal('.rewardSystemTextp', {duration: 2000, origin: 'left', dis
 ScrollReveal().reveal('.joinOurTeamh1', {duration: 2000, origin: 'right', distance: '300px', repeat: true});
 ScrollReveal().reveal('.joinOurTeamTextp', {duration: 2000, origin: 'left', distance: '300px', repeat: true});
 ScrollReveal().reveal('.buutton', {duration: 2000, repeat: true});
+
+ScrollReveal().reveal('#eventTITLE', {duration: 2000, origin: 'left', distance: '300px', repeat: true});
+ScrollReveal().reveal('#displayEventImage', {duration: 2000, origin: 'right', distance: '300px', repeat: true});

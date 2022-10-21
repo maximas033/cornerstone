@@ -14,12 +14,18 @@ function login(event){
         }, 3000);
 
     }).then(function(user){
-        if(user){
-            window.location = "isAutherizedWorker.html"
-            // document.getElementById("gName").innerHTML = user
-        }
-        else{
+        // if(user){
+        //     window.location = "isAutherizedWorker.html"
+        //     // document.getElementById("gName").innerHTML = user
+        // }
+        // else{
 
+        // }
+        if(user != null && email === "max.personal9@gmail.com"){
+            window.location = "editpage.html"
+        }
+        else if(user != null){
+            window.location = "isAutherizedWorker.html"
         }
     })
  }
