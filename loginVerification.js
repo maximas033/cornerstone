@@ -31,7 +31,7 @@ function login(event){
                         if(childData.isADMIN == "yes" || childData.isADMIN == "Yes"){
                             window.location.href = "editpage.html"
                         }else{
-                            window.location.href = "isAuthorizedWorker.html"
+                            window.location.href = "isAutherizedWorker.html"
                         }
                     }
                 });
