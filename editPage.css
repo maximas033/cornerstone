@@ -48,8 +48,9 @@ form input{
 }
 
 #para{
-    height: 100px;
-    text-align: left;
+width: 40%;
+margin-bottom: 20px;
+height: 80px;
 }
 
 /* input placeholder color */
@@ -149,6 +150,12 @@ footer{
         outline:0;
         border: 0;
         border: 1px solid black;
+    }
+
+    #para{
+        width: 90%;
+        margin-bottom: 20px;
+        height: 80px;
     }
     
     #eventPic{
