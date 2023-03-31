@@ -1,11 +1,11 @@
 var firebaseConfig = {
-    apiKey: "AIzaSyDyDM_94zo7oX2Mfu6Emyk2nxKKCy6M4mM",
-    authDomain: "cornerstonewebsitefinal.firebaseapp.com",
-    projectId: "cornerstonewebsitefinal",
-    storageBucket: "cornerstonewebsitefinal.appspot.com",
-    messagingSenderId: "716023788912",
-    appId: "1:716023788912:web:c53d605487490050464bb5",
-    measurementId: "G-EG996ERPST"
+    apiKey: "AIzaSyBESsejdE29jEhXJAZNSMbt4Ml-NiENbv8",
+    authDomain: "cornerstone-coffee-shop.firebaseapp.com",
+    projectId: "cornerstone-coffee-shop",
+    storageBucket: "cornerstone-coffee-shop.appspot.com",
+    messagingSenderId: "657305417307",
+    appId: "1:657305417307:web:71bc04a48c7dab409bf17e",
+    measurementId: "G-5DHKHG324J"
   };
 
   // Initialize Firebase
