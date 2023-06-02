@@ -41,4 +41,4 @@ function getANDdisplay(){
     )
 }
 
-
+window.onload = getANDdisplay()
