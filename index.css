@@ -86,6 +86,7 @@ h2{
     color: black;
     width: 100%;
     text-align: center;
+    margin-bottom: 10%;
 }
 
 #bestCoffeeshopText{
@@ -110,27 +111,6 @@ h2{
     justify-content: space-between;
     align-items: center;
     margin-top: 5%;
-    margin-bottom: 10%;
-}
-
-/* REWARDS SYSTEM SECTION*/
-#rewardSystem{
-    width: 100%;
-}
-
-#rewardSystemText{
-    font-size: 1.3rem;
-    font-weight: lighter;
-    letter-spacing: 0.5px;
-    margin-top: 10%;
-    text-align: center;
-    width: 90%;
-    margin: 15% auto;
-}
-
-#rewardSystemText h1{
-    margin-bottom: 2%;
-    font-size: 3rem;
 }
 
 /* EVENTS SECTION */
@@ -205,24 +185,30 @@ h2{
     margin: 0 5% 5% 5%;
 }
 
-#joinOurTeam button{
-    margin-top: -1%;
-    padding: 1% 5% 1% 5%;
-    border: 1px solid black;
-    border-radius: 5px;
-    background-color: #fff;
-    color: black;
-    font-size: 1rem;
-    font-weight: lighter;
-    letter-spacing: 0.5px;
-    margin-bottom: 5%;
-}
-
-#joinOurTeam a{
-    text-decoration: none;
+form{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     color: black;
 }
 
+form input{
+    margin-bottom: 1.5%;
+}
+
+form textarea{
+    margin-bottom: 1.5%;
+}
+
+form button{
+    margin-top: 1.5%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+}
 /* FOOTER */
 footer{
     /* PUT THE FOOTER AT THE BOTTOM OF THE PAGE */
@@ -353,19 +339,6 @@ footer{
 
     #joinOurTeamText p{
         margin: 0 5% 5% 5%;
-    }
-
-    #joinOurTeam button{
-        margin-top: 5%;
-        padding:10px 15px;
-        border: 1px solid black;
-        border-radius: 5px;
-        background-color: #fff;
-        color: black;
-        font-size: 1rem;
-        font-weight: lighter;
-        letter-spacing: 0.5px;
-        margin-bottom: 5%;
     }
 
     footer{
