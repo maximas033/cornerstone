@@ -1,17 +1,26 @@
+*{
+    user-select: none;
+}
+
 .text-center{
     text-align: center;
-    font: normal;
+    font: bolder;
     font-size: 2.5rem;
-    margin-bottom: 3%;
+    padding: 0;
 }
 
 #displaySM{
     display: none;
     text-align: center;
+    width: 40%;
+    margin: 0 auto;
 }
 
 #successMessage{
-    color: green;
+    border-radius: 8px;
+    color: white;
+    background-color: green;
+    padding: 10px;
     font-size: 1.3rem;
     font-weight: lighter;
     text-align: center;
@@ -35,22 +44,29 @@ form{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-top: auto;
 }
 
 form input{
+    padding: 10px;
+    /* border-radius: 8px; */
+    border: 1px solid gray;
     width: 40%;
     height: 40px;
     margin-bottom: 20px;
-    padding: 10px;
     outline: none;
-    border:0 0 1px solid black 0;
+}
+
+#eventPic{
+     border: none;
 }
 
 #para{
-width: 40%;
-margin-bottom: 20px;
-height: 80px;
+    padding: 10px;
+    /* border-radius: 8px; */
+    border: 1px solid gray;
+    width: 40%;
+    margin-bottom: 20px;
+    height: 100px;
 }
 
 /* input placeholder color */
@@ -62,7 +78,7 @@ form button{
     width: 40%;
     height: 40px;
     border: 1px solid rgb(0, 0, 0);
-    border-radius: 5px;
+    /* border-radius: 5px; */
     background-color: #fff;
     color: black;
     font-size: 1.3rem;
@@ -86,6 +102,7 @@ form button{
    /* display the to the center */
     margin-left: auto;
     margin-right: auto;
+    display: none;
 }
 
 /* FOOTER */
@@ -104,7 +121,7 @@ footer{
 @media screen and (max-width: 768px){
     .text-center{
         text-align: center;
-        font: normal;
+        font-weight: bolder;
         font-size: 2.5rem;
         margin-bottom: 10%;
         margin-top: 5%;
@@ -113,10 +130,13 @@ footer{
     #displaySM{
         display: none;
         text-align: center;
+        width: 90%;
+        text-align: center;
     }
     
     #successMessage{
-        color: green;
+        color: white;
+        background-color: green;
         font-size: 1.3rem;
         font-weight: lighter;
         text-align: center;
@@ -156,6 +176,7 @@ footer{
         width: 90%;
         margin-bottom: 20px;
         height: 80px;
+        resize:vertical;
     }
     
     #eventPic{

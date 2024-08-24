@@ -1,3 +1,7 @@
+* {
+    user-select: none
+}
+
 #addPerson{
     margin-top: 5%;
     text-align: center;
@@ -55,6 +59,7 @@
 #addPerson button:hover{
     background-color: rgb(0, 0, 0);
     color: #fff;
+    transition: all 0.2s ease-in;
 }
 
 footer{

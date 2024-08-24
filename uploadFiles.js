@@ -21,10 +21,17 @@ function uploadFiles(event) {
     "state_changed",
     function (snapshot) {
       var progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+      document.getElementById("displaySM").style.display = "block"
+      document.getElementById("successMessage").innerHTML = "Upload is " + progress + "% done"
       console.log("Upload is " + progress + "% done");
       if (progress === 100) {
-        showSuccessMessage("displaySM");
+        document.getElementById("successMessage").innerHTML = "Successfully uploaded"
         clearFormInputs();
+        // wait 5 seconds and then hide it
+        setTimeout(function(){
+          document.getElementById("displaySM").style.display = "none"
+          document.getElementById("successMessage").innerHTML = " "
+          }, 5000);
       }
     },
     function (error) {
@@ -71,8 +78,14 @@ function deleteAll() {
   // Delete database data
   dbRef.remove()
     .then(function () {
-      // Database deletion successful
-      console.log("Successfully deleted database data.");
+
+      document.getElementById('displaySM').style.display = "block"
+      document.getElementById("successMessage").innerHTML = "Event successfully deleted"
+      // wait 5 seconds then hide
+      setTimeout(function(){
+        document.getElementById('displaySM').style.display = "none"
+        document.getElementById("successMessage").innerHTML = " "
+      }, 5000);
 
       // Delete storage data
       storageRef
@@ -95,6 +108,12 @@ function deleteAll() {
               // When all images deleted, log success
               if (deleteCounter === result.items.length) {
                 document.getElementById('displaySMR').style.display = "block"
+                document.getElementById("successMessage").innerHTML = "Successfully deleted"
+                // wait 5 seconds then hide
+                setTimeout(function(){
+                  document.getElementById('displaySMR').style.display = "none"
+                  document.getElementById("successMessage").innerHTML = " "
+                }, 5000);
               }
             });
           });
@@ -108,19 +127,6 @@ function deleteAll() {
     .catch(function (error) {
       console.error("Error deleting database data:", error);
     });
-}
-
-
-function deleteButton() {
-  deleteAll();
-  showSuccessMessage("displaySMR");
-}
-
-function showSuccessMessage(elementId) {
-  document.getElementById(elementId).style.display = "block";
-  setTimeout(function () {
-    document.getElementById(elementId).style.display = "none";
-  }, 3000);
 }
 
 function clearFormInputs() {

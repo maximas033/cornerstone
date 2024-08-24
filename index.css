@@ -1,6 +1,7 @@
 *{
     /* dont allow horizontal scrolling */
     overflow-x: hidden;
+    user-select: none
 }
 
 /* WELCOME SECTION DIV THAT DISPLAY A WELCOME PICTURE */
@@ -123,39 +124,36 @@ h2{
     flex-direction: row;
     justify-content: space-evenly;
     vertical-align: center;
+    text-align: left;
 }
 
-#eventTITLE{
-    margin-top: 5%;
-    text-align: center;
+#eventText{
+    width: 40%;
+}
+
+#displayEventTitle{
+    margin-bottom: 3%;
 }
 
 #displayEventTEXT{
     font-size: 1.3rem;
     font-weight: lighter;
     letter-spacing: 0.5px;
-    width: 65%;
-    margin: 0 auto;
-    text-align: center;
     vertical-align: center;
+    margin-bottom: 5%;
+    text-indent: 35px;
 }
 
 #displayEventImage{
-    margin-right: 10%;
-}
-
-#eventText h1{
-    margin-bottom: 2%;
-    font-size: 3rem;
+    width: 40%;
+    vertical-align: center;
+    object-fit: contain;
+    margin: auto 0 auto 0;
 }
 
 #displayEventImage img{
-    /* make it not strech */
-   object-fit: cover;
-   border-radius: 5px;
-
+    width: 95%;
 }
-
 
 
 /* JOIN OUR TEAM SECTION */
@@ -195,11 +193,19 @@ form{
 }
 
 form input{
-    margin-bottom: 1.5%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid gray;
+    margin-bottom: 2%;
+    font-weight: lighter;
 }
 
 form textarea{
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid gray;
     margin-bottom: 1.5%;
+    font-weight: lighter;
 }
 
 form button{
@@ -208,6 +214,7 @@ form button{
     background-color: black;
     color: white;
     border: none;
+    border-radius: 8px;
 }
 /* FOOTER */
 footer{
@@ -269,21 +276,6 @@ footer{
         margin-bottom: 15%;
     }
 
-    #rewardSystem{
-        margin-top: 20%;
-    }
-
-    #rewardSystemText h1{
-        font-size: 2.4rem;
-        margin-top: 10%;
-        margin-bottom: 5%;
-    }
-
-    #rewardSystemText{
-        margin-top: 5%;
-        margin-bottom: 10%;
-    }
-
     #event{
         width: 100%;
         display: flex;
@@ -293,6 +285,10 @@ footer{
         margin-top: 10%;
         margin-bottom: 15%;
         text-align: center;
+    }
+
+    #eventText{
+        width: 100%;
     }
 
     #displayEventTitle{
@@ -306,7 +302,6 @@ footer{
         font-size: 1.3rem;
         font-weight: lighter;
         letter-spacing: 0.5px;
-        text-align: center;
         vertical-align: center;
         margin: 5% 5%;
         text-align: left;
@@ -314,11 +309,17 @@ footer{
     }
 
     #displayEventImage{
+        width: 100%;
         margin-top: 5%;
         margin-bottom: 5%;
-        width: 100%;
         align-items: center;
         text-align: center;
+        object-fit: contain;
+    }
+
+    #displayEventImage img{
+        width: 100%;
+        margin: 0;
     }
     
     #joinOurTeam{
@@ -348,13 +349,21 @@ footer{
     }
 
     form input{
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid gray;
         margin-bottom: 2%;
+        font-weight: lighter;
     }
 
     form textarea{
+        border-radius: 8px;
         height: 150px;
+        font-weight: lighter;
     }
+
     form button{
+        border-radius: 8px;
         margin-top: 2%;
     }
 

@@ -1,17 +1,14 @@
 *{
-    /* dont allow horizontal scrolling */
     overflow-x: hidden;
+    user-select: none;
 }
 
 #loginForm{
-    margin: auto;
+    width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 60%;
-    background-color: white;
-    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,29 +16,42 @@
     margin-top: auto;
 }
 
+#loginFormText{
+    width: 40%;
+}
+
 #loginForm h1{
     text-align: center;
-    font-size: 2.5rem;
-    font-weight: heavier;
-    margin-bottom: 20px;
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 10%;
 }
 
 #errorMessage{
-    color: red;
+    vertical-align: center;
+    padding: 10px;
+    color: white;
+    background-color: red;
     font-size: 1rem;
-    text-align: center;
     font-weight: lighter;
-    margin-bottom: 20px;
+    margin-bottom: 5%;
     display: none;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#loginForm form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #loginForm input{
-    width: 100%;
-    height: 40px;
-    margin-bottom: 20px;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 5px;
     padding: 10px;
+    border-radius: 8px;
+    border: 1px solid gray;
+    margin-bottom: 20px;
 }
 
 /* REMOVE THE BLUE OUTLINE AROUND THE INPUTS */
@@ -51,19 +61,17 @@
 
 
 #loginForm button{
-    /* center the button */
-    margin: auto;
+    margin: 0 auto;
     width: 50%;
     height: 40px;
     border: 1px solid rgb(0, 0, 0);
-    border-radius: 5px;
+    border-radius: 8px;
     background-color: #fff;
     color: black;
     font-size: 1.3rem;
     font-weight: lighter;
     cursor: pointer;
     text-align: center;
-
 }
 
 
@@ -90,26 +98,32 @@ footer{
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 600px){
+
     #loginForm{
-        width: 90%;
+        width: 100%;
+        align-items: center;
     }
 
     #loginForm h1{
         font-size: 2rem;
     }
+    #loginFormText{
+        width: 95%;
+        align-items: center;
+    }
 
     #loginForm input{
         height: 30px;
-        /* make the imput inside bigger */
         padding: 20px 10px 20px 10px;
-
+        width: 100%;
     }
 
     #loginForm button{
         height: 45px;
         font-size: 1rem;
         padding: 5px 5px;
-
+        width: 90%;
+        font-weight: normal;
     }
 
     footer{

@@ -5,10 +5,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cornerstone CAFE | STAFF </title>
+    <title>Cornerstone CAFE | SEND MESSAGE </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- LINK TO CSS FILES -->
+    <link rel="stylesheet" type="text/css" href="sendMessage.css">
     <link rel="stylesheet" type="text/css" href="editPage.css">
+
     <!-- LINK TO THE SCROOL PAGE ANIMATIONS -->
     <script src="https://unpkg.com/scrollreveal@4"></script>
     <!-- FIREBASE LINKS -->
@@ -29,11 +31,8 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="addPeople.html">Add people</a>
+                    <a class="nav-link" href="editpage.html">Back</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="sendMessage.html">Send Message</a>
-              </li>
                 <li class="nav-item">
                     <a class="nav-link" style="color: red;" onclick="logOut()">Log Out</a>
                 </li>
@@ -42,28 +41,18 @@
         </div>
       </nav>
 
-      <section>
-        <div>
-            <h1 class="text-center">Edit Event</h1>
-        </div>
-      </section>
 
-      <section id="displaySM">
-        <div>
-            <p id="successMessage"></p>
-            <p id="errorMessage"></p>
-        </div>
-      </section>
+      <form class="sendingMessageForm">
+        <h1>Send Message To All Team mambers</h1><br/>
+        <!-- Subject of the message-->
+        <input type="text" id="subject" placeholder="Enter your subject here..." required>
+        <!-- Body of the message-->
+        <textarea rows="5" cols="65" placeholder=" Enter your message here..." required></textarea>
+        <!-- Send Button -->
+        <button type="submit" onClick="sendMessageToAllMembers()" >Send</button>
+      </form>
 
-      <section id="uploadEvent">
-        <form id="uploadEventText"> 
-            <input type="text" placeholder="Title" id="EventTitle" required>
-            <input type="file" accept="image/" id="eventPic" >
-            <textarea type="text", placeholder="Paragraph" id="para" required></textarea>
-            <button type="submit" onclick="uploadFiles(event)">Upload Event</button>
-            <button onclick="deleteAll()" id="DeleteEvent" type="button">DELETE EVENT</button>
-        </form>
-      </section>
+
 
 
       <footer>
@@ -79,12 +68,10 @@
         <script src="firebaseConfiguration.js"></script>
         <script src="loginVerification.js"></script>
         <script src="uploadFiles.js"></script>
-        <script src="checkFewThingsOnLoad.js"></script>
     </body>
 </html>
 
 
 <!-- To do: 
-  1. Only show the delete button if theres sn event posted already. 
-  2. Show the amount of events currently posted 
+  1. Design it for the phones and tablets in css using meta tegs
 -->
